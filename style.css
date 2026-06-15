@@ -498,6 +498,7 @@ button {
 
 .item:hover {
     scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .text_container3 {
@@ -527,6 +528,8 @@ button {
 
 .text_container3 button:hover {
     scale: 1.07;
+    background-color: #2b341d;
+    color: var(--lightGreen);
 }
 
 .text_container2 h1, .text_container1 p, .text_container3 p, .text_container3 button, .item_container, .laceTop img, .laceBottom img {
@@ -592,6 +595,8 @@ button {
 
 .text_container4 button:hover {
     scale: 1.07;
+    background-color: #2b341d;
+    color: var(--lightGreen);
 }
 
 footer {
