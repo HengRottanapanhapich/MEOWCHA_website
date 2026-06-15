@@ -417,14 +417,35 @@ button {
 
 
 .menu_container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100vw;
     margin: 0 auto;
-    padding: 4.5rem 2rem;
-    gap: 2rem;
+    padding: 8rem 2rem;
+    gap: 1.5rem;
     background-color: var(--darkGreen);
+}
+
+.laceTop {
+    position: absolute;
+    width: 100%;
+    top: -14px;
+}
+
+.laceTop img {
+    width: 100%;
+}
+
+.laceBottom {
+    position: absolute;
+    width: 100%;
+    bottom: -17px;
+}
+
+.laceBottom img {
+    width: 100%;
 }
 
 .text_container2 {
@@ -481,6 +502,7 @@ button {
 
 .text_container3 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .text_container3 p button {
@@ -505,6 +527,24 @@ button {
 
 .text_container3 button:hover {
     scale: 1.07;
+}
+
+.text_container2 h1, .text_container1 p, .text_container3 p, .text_container3 button, .item_container, .laceTop img, .laceBottom img {
+    position: relative;
+    z-index: 3;
+}
+
+.backgroundStyle2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(./src/greenBackground1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
 }
 
 .contact_container {
