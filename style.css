@@ -543,7 +543,7 @@ button {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url(./src/greenBackground1.png);
+    background-image: url(./src/greenBackground1.png); /*next time use opacity property*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -628,6 +628,8 @@ footer {
 .footer_list_container li {
     line-height: 1.8;
     letter-spacing: 0.05rem;
+    font-size: clamp(0.9rem, 1.04vw, 1rem);
+    transition: 200ms ease;
 }
 
 .footer_column a {
@@ -637,10 +639,6 @@ footer {
 
 .footer_column a:hover {
     scale: 1.05;
-}
-
-.footer_list_container li {
-    transition: 200ms ease;
 }
 
 .footer_list_container li:hover {
