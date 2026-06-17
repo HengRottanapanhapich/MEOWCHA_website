@@ -660,6 +660,22 @@ footer {
     font-weight: 600;
 }
 
+#align_icon {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon {
+    border-radius: 0.5rem;
+    width: 32px;
+    height: 32px;
+    transition: 200ms ease;
+}
+
+.icon:hover {
+    scale: 1.1;
+}
+
 @media (max-width: 768px) {
     .hamburger_btn {
         display: block;
