@@ -16,6 +16,7 @@
 
 body {
     min-height: 100vh;
+    background-color: var(--base);
 }
 
 header {
@@ -733,8 +734,39 @@ footer {
         /* order: 2; */
     }
 
+    #text2 {
+        animation-name: slideInText;
+        animation-duration: 0.8s;
+        animation-fill-mode: both;
+        animation-delay: 1.2s;
+        animation-timing-function: ease-in;
+    }
+
+    @keyframes slideInText {
+        0% {
+            transform: translateX(-70%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
     #text1 {
         padding-top: 8rem;
+        animation-name: slideInRightText;
+    }
+
+    @keyframes slideInRightText {
+        0% {
+            transform: translateX(70%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
 
     .new_arrival_container {

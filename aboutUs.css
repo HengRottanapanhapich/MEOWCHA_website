@@ -16,6 +16,7 @@
 
 body {
     min-height: 100vh;
+    background-color: var(--base);
 }
 
 header {
@@ -221,7 +222,22 @@ a {
     width: clamp(6rem, 13.54vw, 18rem);
     min-height: clamp(40rem, 41.6vh, 43rem);
     background-color: var(--darkRed);
+    animation: slideInText 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 0.1s;
 }
+
+@keyframes slideInText {
+        0% {
+            transform: translateX(-30%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
 
 .aboutUs_text_container {
     display: flex;
@@ -230,6 +246,11 @@ a {
     text-align: center;
     width: 40%;
     min-width: clamp(15rem, 60.41vw, 65rem);
+}
+
+#text1 {
+    animation: slideInText 0.8s;
+    animation-timing-function: ease-in;
 }
 
 .aboutUs_text_container h1 {
