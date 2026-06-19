@@ -238,6 +238,10 @@ a {
     color: var(--lightBrown);
 }
 
+#icon_container {
+    display: inline;
+}
+
 .form_container {
     z-index: 5;
     width: 35%;
@@ -265,7 +269,16 @@ a {
     border-radius: 0.5rem;
     background-color: var(--darkRed);
     color: white;
+    cursor: pointer;
+    transition: 200ms ease;
 }
+
+.label_container button:hover {
+    scale: 1.07;
+    background-color: #591c12;
+    color: rgb(233, 233, 233);
+}
+
 
 label {
     display: block;
