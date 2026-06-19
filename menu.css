@@ -213,6 +213,8 @@ a {
     position: relative;
     padding: 4rem clamp(2rem, 4.16vw, 4rem);
     background-color: var(--base);
+    animation: slideInText 1s;
+    animation-timing-function: ease-in;
 }
 
 .menu_title img {
@@ -233,7 +235,22 @@ a {
 .matcha_container {
     padding: 2rem 0rem 1.5rem clamp(1rem, 2.08vw, 2rem);
     border-left: 7px solid var(--darkGreen);
+    animation: slideInText 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
 }
+
+@keyframes slideInText {
+        0% {
+            transform: translateX(-30%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
 
 .matcha_container h1{
     padding-bottom: clamp(1.1rem, 1.56vw, 1.5rem);
@@ -261,6 +278,10 @@ a {
 .houjicha_container {
     padding-left: 2rem;
     border-left: 7px solid var(--darkBrown);
+    animation: slideInText 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
 }
 
 .houjicha_container h1 {
@@ -283,6 +304,10 @@ a {
 .snackDessert_container {
     padding-left: 2rem;
     border-left: 7px solid var(--darkRed);
+    animation: slideInText 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
 }
 
 .snackDessert_container h1 {
@@ -353,6 +378,12 @@ a {
     width: 288px;
     height: 398px;
     background-color: var(--darkGreen);
+    transition: 200ms ease;
+}
+
+.greenS:hover {
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .items1 {
@@ -401,6 +432,12 @@ a {
     width: 288px;
     height: 398px;
     background-color: var(--darkBrown);
+    transition: 200ms ease;
+}
+
+.brownS:hover {
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .snackAndDessert_container {
@@ -432,6 +469,12 @@ a {
     width: 288px;
     height: 398px;
     background-color: var(--darkRed);
+    transition: 200ms ease;
+}
+
+.redS:hover {
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .matchaFamily_container h1, .greenS, .houjichaFamily_container h1, .brownS, .snackAndDessert_container h1, .redS {
