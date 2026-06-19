@@ -627,6 +627,23 @@ html {
     }
 }
 
+@media (max-width: 805px) {
+    .matcha_container {
+        animation-delay: 0.8s;
+        animation-fill-mode: both;
+    }
+
+    .houjicha_container {
+        animation-delay: 1.6s;
+        animation-fill-mode: both;
+    }
+
+    .snackDessert_container {
+        animation-delay: 2.4s;
+        animation-fill-mode: both;
+    }
+}
+
 @media (max-width: 440px) {
     .matchaFamily_container {
         padding: 4rem 0rem;
