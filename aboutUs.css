@@ -286,6 +286,28 @@ a {
     width: clamp(6rem, 13.54vw, 18rem);
     height: 60vh;
     background-color: var(--darkRed);
+    animation: slideInText1 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 0.9s;
+}
+
+@keyframes slideInText1 {
+        0% {
+            transform: translateX(30%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+#text2 {
+    animation: slideInText1 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
 }
 
 .where_text_container {
@@ -320,6 +342,10 @@ a {
 .img_container img {
     width: 70%;
     height: auto;
+    animation: slideInText 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 1.6s;
 }
 
 .aboutUs_text_container h1, .aboutUs_text_container p, .where_text_container h1, .where_text_container p, .redBar1, .redbar2, .img_container img {
